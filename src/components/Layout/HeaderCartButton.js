@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const HeaderCartButton = () => {
+const HeaderCartButton = (props) => {
   return (
-    <div>
-      Button
-    </div>
+    <button>
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
   )
 }
 
