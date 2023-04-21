@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import classes from './MealItem.module.css'
 
-const MealItem = () => {
+const MealItem = (props) => {
+  const price = `$${props.price.toFixed(2)}`
   return (
-    <div>MealItem</div>
-  )
-}
+    <li className={classes.meal}>
+      <div><h3>{props.name}</h3>
+      <div className={classes.description}>{props.desc}</div></div>
+      <div className={classes.price}>{price}</div>
+      <div></div>
+    </li>
+  );
+};
 
-export default MealItem
+export default MealItem;
